@@ -61,16 +61,16 @@
               <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item " >
-                    <a class="nav-link" href="#" style="color:red">Home</a>
+                    <a class="nav-link" href="{{url('home')}}" style="color:red">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:red">Login</a>
+                    <a class="nav-link" href="{{url('login')}}" style="color:red">Login</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:red">Register</a>
+                    <a class="nav-link" href="{{url('register')}}" style="color:red">Register</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:red">Contact</a>
+                    <a class="nav-link" href="{{url('login')}}" style="color:red">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -100,13 +100,13 @@
           <div class="container">
             <div class="row">
               
-              <div class="col-md-6 d-flex align-items-center">
+              <div class="col-md-7 d-flex align-items-center">
                 <div>
-                  <h2 class="display-4">About </h2>
+                  <h2 class="display-4">Ab<span>out</span> </h2>
                   <p style="text-align: justify">"Our task management platform is designed to streamline and enhance productivity in both individual and team settings. With an intuitive and user-friendly interface, users can easily create, assign, and track tasks, ensuring effective collaboration and efficient workflow management. The platform offers advanced features such as real-time notifications, task prioritization, and deadline setting, enabling users to stay organized and meet project milestones. Additionally, our platform integrates with popular productivity tools, providing a seamless workflow experience. With insightful analytics and reporting, users can gain valuable insights into task performance and make data-driven decisions. Our platform prioritizes data security, ensuring robust encryption and access controls. Whether you're an individual, a small team, or a large organization, our scalable platform adapts to your needs, helping you achieve optimal task management and productivity."</p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-5">
                 <img src="vec2.jpg" alt="About Us Image" class="task-image">
               </div>
             </div>
@@ -118,11 +118,12 @@
                     <div class="col-md-4 text-center">
                       <div class="font-bold">Email: support@micbrain.tech</div>
                     </div>
-                    <div class="col-md-4 text-center">
-                      <div class="font-bold">Phone: +91 82209 33622</div>
-                    </div>
+                    
                     <div class="col-md-4 text-center">
                       <div class="font-bold">All Rights Reserved by micbrain.tech</div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="font-bold">Phone: +91 82209 33622</div>
                     </div>
                   </div>
                 </div>
