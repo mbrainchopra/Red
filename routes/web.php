@@ -20,6 +20,9 @@ Route::get('/', function () {
 });
 Route::post('taskadd',[TaskControl::class,'addtask']);
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/* 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); */
+Route::get('home',[TaskControl::class,'getTask']);
 Route::view('addtask','addtask');
+Route::get('tasknow',[TaskControl::class,'gettask']);
+Route::view('test','test');
