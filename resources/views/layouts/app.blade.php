@@ -24,7 +24,7 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body  >
+<body >
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -34,7 +34,7 @@
                             color: red;
                         }
                     </style>
-                  <h3 ><span>T</span>(o) <span>Ask Re</span>(a)<span>d</span></h3>
+                  <h3 ><span>T</span>(🤣) <span>Ask Re</span>(🧠)<span>d</span></h3>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\task;
-
+use App\Models\gtask;
+use Illuminate\Support\Facades\Redirect;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -31,29 +32,21 @@ class TaskControl extends Controller
         ]);
 
        
-return view('addtask')->with('success', 'Your Task Added. I will inform you on time');
+        return Redirect::route('home');
     }
 
 
     public function getTask()
-    {
-         $user = Auth::user();
-        
-        $email = $user->email;/*
-        $ta = task::where('email', $email)->get();
-        return $ta; */
-     /*     $currentDateTime = Carbon::now();
-        return $currentDateTime; */
+{
+    $user = Auth::user();
+    $authEmail = $user->email;
 
-   
-/* 
-        $datetime = Carbon::now()->timezone('Asia/Kolkata'); 
-         $time = $datetime->format('H:i'); // Example format: 15:20:00
-        $date = $datetime->toDateString();
-       */
-        
-         $tasknow=task::where('email',$email)->/* where('date',$date)->where('time',$time)-> */get();
-        return view('home', compact('tasknow')); 
+    $gtasks = gtask::where('members', 'like', "%$authEmail%")->get();
+    $tasks = task::where('email', $authEmail)->get();
 
-    }
+    $allTasks = $gtasks->concat($tasks);
+
+    return view('home', compact('allTasks'));
+}
+
 }

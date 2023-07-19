@@ -1,0 +1,2 @@
+step 1:
+    composer update maatwebsite/excel --ignore-platform-req=ext-sodium

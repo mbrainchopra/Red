@@ -89,9 +89,9 @@
                             color: red;
                         }
                     </style>
-                  <h2 class="display-4"><span>T</span>(o) <span>Ask Re</span>(a)<span>d</span></h2>
+                  <h2 class="display-4"><span>T</span>('o') <span>Ask Re</span>(min)<span>d</span></h2>
                   <p  style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra fringilla dui ac aliquet. Donec sodales erat non nibh volutpat, sed rutrum enim tincidunt. Integer non vulputate sem, vitae fringilla mauris. Fusce non sollicitudin orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla justo at lobortis iaculis.</p>
-                  <button class="btn btn-primary">Get Started</button>
+                  <a href="{{url('login')}}"><button type="button"   class="btn btn-primary">Get Started</button></a>
                 </div>
               </div>
             </div>
